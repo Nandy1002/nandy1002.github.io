@@ -1,0 +1,20 @@
+[
+  {
+    "category": "Languages",
+    "icon": "code",
+    "color": "text-primary",
+    "items": ["C#", "C++", "Python"]
+  },
+  {
+    "category": "Engine & Tools",
+    "icon": "deployed_code",
+    "color": "text-secondary",
+    "items": ["Unity (C#)", "Gameplay Systems", "Rapid Prototyping", "Game Feel Tuning", "UI Systems", "FTUE Implementation"]
+  },
+  {
+    "category": "Technology & Concepts",
+    "icon": "construction",
+    "color": "text-primary",
+    "items": ["GitHub", "Plastic SCM", "Debugging & Profiling", "Performance Optimization", "Game Design Patterns", "Data Structures", "Iterative Development"]
+  }
+]

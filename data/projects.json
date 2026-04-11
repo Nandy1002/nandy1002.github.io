@@ -1,0 +1,86 @@
+[
+  {
+    "id": "fps-inventory-system",
+    "title": "FPS Inventory System",
+    "subtitle": "Gameplay Prototype",
+    "thumbnail": "assets/projects/fps-inventory-system/thumbnail.png",
+    "heroImage": "assets/projects/fps-inventory-system/thumbnail.png",
+    "demoVideo": "assets/projects/fps-inventory-system/demo.mp4",
+    "prototypeLink": "",
+    "codeLink": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-",
+    "webglLink": "",
+    "itchLink": "",
+    "description": "A Unity prototype for a first-person shooter inventory and interaction system, including weapon pickup, switching, and UI-based management. Designed with a test-ready gameplay loop and refined through iterative debugging to ensure smooth and responsive player interactions.",
+    "category": "Gameplay Prototype",
+    "technologies": ["Unity", "C#", "UI Toolkit", "Input System"],
+    "tags": ["C#", "FPS", "Unity"],
+    "primaryTag": "Unity",
+    "role": "Sole Developer",
+    "year": 2026,
+    "featured": true,
+    "mechanics": [
+      {
+        "title": "Weapon Pickup & Switching",
+        "description": "Seamless weapon pickup, inventory management, and switching logic with a clean UI-driven experience built for test-ready prototyping.",
+        "icon": "open_with"
+      },
+      {
+        "title": "UI-Based Management",
+        "description": "A responsive inventory HUD system that visually communicates weapon states, ammo counts, and interaction prompts clearly to the player.",
+        "icon": "dashboard"
+      },
+      {
+        "title": "Player Interaction System",
+        "description": "Raycasting-based interaction system allowing the player to pick up, drop, and cycle weapons with tight, responsive feel tuning.",
+        "icon": "gamepad"
+      },
+      {
+        "title": "Iterative Polish",
+        "description": "Refined through multiple playtest cycles to ensure smooth, bug-free gameplay loops and responsive player feedback at all times.",
+        "icon": "loop"
+      }
+    ]
+  },
+  {
+    "id": "cursed-chaos",
+    "title": "The Cursed Chaos",
+    "subtitle": "Horror Game",
+    "thumbnail": "assets/projects/cursed-chaos/thumbnail.jpg",
+    "heroImage": "assets/projects/cursed-chaos/thumbnail.jpg",
+    "demoVideo": "assets/projects/cursed-chaos/demo.mp4",
+    "prototypeLink": "",
+    "codeLink": "https://github.com/Nandy1002/The-Cursed-Chaos-Horror-Game",
+    "webglLink": "",
+    "itchLink": "",
+    "description": "A Unity-based first-person horror prototype focused on exploration and survival. Implemented player controls, interaction systems, and atmosphere-driven level design, with a complete gameplay loop to support playtesting. Iterated on lighting, game feel, and responsiveness based on feedback.",
+    "category": "Horror / Exploration",
+    "technologies": ["Unity", "C#", "Post Processing", "Cinemachine"],
+    "tags": ["C#", "Horror", "Unity"],
+    "primaryTag": "Unity",
+    "role": "Sole Developer",
+    "year": 2025,
+    "featured": true,
+    "mechanics": [
+      {
+        "title": "Atmosphere-Driven Level Design",
+        "description": "Carefully crafted environments that build tension through lighting, sound design cues, and environmental storytelling to keep the player on edge.",
+        "icon": "dark_mode"
+      },
+      {
+        "title": "Player Controls & Interaction",
+        "description": "Tight first-person controls with interaction systems that allow the player to examine objects and navigate the environment fluidly.",
+        "icon": "person_walking"
+      },
+      {
+        "title": "Complete Gameplay Loop",
+        "description": "A full exploration and survival loop designed for playtesting — from starting area to end trigger — with iterative improvements based on feedback.",
+        "icon": "loop"
+      },
+      {
+        "title": "Game Feel Tuning",
+        "description": "Spent multiple iteration cycles tuning responsiveness, post-processing effects, and camera behaviour to maximize immersion and horror impact.",
+        "icon": "tune"
+      }
+    ]
+  }
+]
