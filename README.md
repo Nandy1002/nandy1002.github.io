@@ -58,8 +58,8 @@ To view the site locally:
   <a href="https://nandy1002.itch.io/" target="_blank">
     <img src="https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white" />
   </a>
-  <a href="mailto:nabendudas2001@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="https://forms.gle/zkxzp6RKNk1QjEyh6" target="_blank">
+    <img src="https://img.shields.io/badge/Connect-Google_Forms-4285F4?style=for-the-badge&logo=google-forms&logoColor=white" />
   </a>
 </div>
 
