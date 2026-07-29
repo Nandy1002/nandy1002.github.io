@@ -3,8 +3,8 @@
     "id": "fps-inventory-system",
     "title": "FPS Inventory System",
     "subtitle": "Gameplay Prototype",
-    "thumbnail": "assets/projects/fps-inventory-system/thumbnail.png",
-    "heroImage": "assets/projects/fps-inventory-system/thumbnail.png",
+    "thumbnail": "assets/projects/fps-inventory-system/thumbnail.jpg",
+    "heroImage": "assets/projects/fps-inventory-system/thumbnail.jpg",
     "demoVideo": "assets/projects/fps-inventory-system/demo.mp4",
     "prototypeLink": "",
     "codeLink": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-",
@@ -12,8 +12,17 @@
     "itchLink": "",
     "description": "A Unity prototype for a first-person shooter inventory and interaction system, including weapon pickup, switching, and UI-based management. Designed with a test-ready gameplay loop and refined through iterative debugging to ensure smooth and responsive player interactions.",
     "category": "Gameplay Prototype",
-    "technologies": ["Unity", "C#", "UI Toolkit", "Input System"],
-    "tags": ["C#", "FPS", "Unity"],
+    "technologies": [
+      "Unity",
+      "C#",
+      "UI Toolkit",
+      "Input System"
+    ],
+    "tags": [
+      "C#",
+      "FPS",
+      "Unity"
+    ],
     "primaryTag": "Unity",
     "role": "Sole Developer",
     "year": 2026,
@@ -39,6 +48,28 @@
         "description": "Refined through multiple playtest cycles to ensure smooth, bug-free gameplay loops and responsive player feedback at all times.",
         "icon": "loop"
       }
+    ],
+    "codeHighlights": [
+      {
+        "label": "Inventory.cs",
+        "note": "The inventory model itself — holding, swapping and dropping weapons across slots.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Inventory.cs"
+      },
+      {
+        "label": "Player.cs",
+        "note": "Raycast pickup and the interaction entry point that drives everything else.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Player.cs"
+      },
+      {
+        "label": "Gun.cs",
+        "note": "Weapon definition and per-weapon state, kept separate from the UI that shows it.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Gun.cs"
+      },
+      {
+        "label": "PrimaryGunPanel.cs",
+        "note": "Slot panel logic — the largest UI class, handling drag, assign and clear.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/PrimaryGunPanel.cs"
+      }
     ]
   },
   {
@@ -52,34 +83,144 @@
     "codeLink": "https://github.com/Nandy1002/The-Cursed-Chaos-Horror-Game",
     "webglLink": "",
     "itchLink": "",
-    "description": "A Unity-based first-person horror prototype focused on exploration and survival. Implemented player controls, interaction systems, and atmosphere-driven level design, with a complete gameplay loop to support playtesting. Iterated on lighting, game feel, and responsiveness based on feedback.",
+    "description": "A horror prototype built in Unity 6. You play a software engineer whose mountain-forest getaway turns into something much worse. I built the interaction and inventory systems, the task and objective flow, and the atmosphere-driven level design, then staged the story beats in Timeline. Character movement starts from Unity's Starter Assets controller and the avatars come from Ready Player Me — the gameplay systems layered on top of them are mine.",
     "category": "Horror / Exploration",
-    "technologies": ["Unity", "C#", "Post Processing", "Cinemachine"],
-    "tags": ["C#", "Horror", "Unity"],
+    "spotlight": true,
+    "technologies": [
+      "Unity 6",
+      "C#",
+      "URP",
+      "Cinemachine",
+      "Input System",
+      "ProBuilder",
+      "AI Navigation"
+    ],
+    "tags": [
+      "C#",
+      "Horror",
+      "Unity"
+    ],
     "primaryTag": "Unity",
     "role": "Sole Developer",
     "year": 2025,
     "featured": true,
     "mechanics": [
       {
-        "title": "Atmosphere-Driven Level Design",
-        "description": "Carefully crafted environments that build tension through lighting, sound design cues, and environmental storytelling to keep the player on edge.",
-        "icon": "dark_mode"
-      },
-      {
-        "title": "Player Controls & Interaction",
-        "description": "Tight first-person controls with interaction systems that allow the player to examine objects and navigate the environment fluidly.",
+        "title": "Traversal & Interaction",
+        "description": "Movement builds on Unity's Starter Assets controller; the interaction layer on top is mine — raycast examine and pickup on E, and a toggleable flashlight that is the player's only reliable light source.",
         "icon": "person_walking"
       },
       {
-        "title": "Complete Gameplay Loop",
-        "description": "A full exploration and survival loop designed for playtesting — from starting area to end trigger — with iterative improvements based on feedback.",
-        "icon": "loop"
+        "title": "Inventory & Resource Management",
+        "description": "A pickup and inventory system where limited supplies have to be rationed across a run, so what the player chooses to carry actually matters.",
+        "icon": "inventory_2"
       },
       {
-        "title": "Game Feel Tuning",
-        "description": "Spent multiple iteration cycles tuning responsiveness, post-processing effects, and camera behaviour to maximize immersion and horror impact.",
-        "icon": "tune"
+        "title": "Task & Objective System",
+        "description": "A dedicated task system tracks objectives through the run and drives what the player is told to do next, so the level can gate progress on exploration rather than on a linear corridor.",
+        "icon": "extension"
+      },
+      {
+        "title": "Timeline-Driven Cutscenes",
+        "description": "Story beats are staged with Unity Timeline and Cinemachine over Ready Player Me avatars, handing camera control between gameplay and cutscene without breaking the player's sense of place.",
+        "icon": "dark_mode"
+      }
+    ],
+    "codeHighlights": [
+      {
+        "label": "MainManager.cs",
+        "note": "Central game state — run flow, pausing and scene-level coordination.",
+        "url": "https://github.com/Nandy1002/The-Cursed-Chaos-Horror-Game/blob/main/Assets/2_Scripts/MainManager.cs"
+      },
+      {
+        "label": "Task System/",
+        "note": "Objective tracking that decides what the player is asked to do next.",
+        "url": "https://github.com/Nandy1002/The-Cursed-Chaos-Horror-Game/tree/main/Assets/2_Scripts/Task%20System"
+      },
+      {
+        "label": "Interaction Scripts/",
+        "note": "Interactable objects and the contracts they share with the player.",
+        "url": "https://github.com/Nandy1002/The-Cursed-Chaos-Horror-Game/tree/main/Assets/2_Scripts/Interaction%20Scripts"
+      },
+      {
+        "label": "ScriptableObjects/",
+        "note": "Data-driven content kept as assets instead of hard-coded values.",
+        "url": "https://github.com/Nandy1002/The-Cursed-Chaos-Horror-Game/tree/main/Assets/2_Scripts/ScriptableObjects"
+      }
+    ]
+  },
+  {
+    "id": "kitchen-chaos",
+    "title": "Kitchen Chaos",
+    "subtitle": "3D Cooking Game",
+    "thumbnail": "assets/projects/kitchen-chaos/thumbnail.jpg",
+    "heroImage": "assets/projects/kitchen-chaos/thumbnail.jpg",
+    "demoVideo": "assets/projects/kitchen-chaos/demo.mp4",
+    "prototypeLink": "",
+    "codeLink": "https://github.com/Nandy1002/KitchenChaosGameProject",
+    "webglLink": "",
+    "itchLink": "",
+    "description": "A 3D kitchen sim where you assemble recipes against a timer — grab ingredients, chop them, fry them, plate them and deliver before the clock runs out, scoring on how many orders you complete. Built by working through Code Monkey's Kitchen Chaos course as a deliberate study in clean Unity architecture: interfaces, ScriptableObject-driven data and event-based communication instead of one script that does everything.",
+    "category": "Cooking / Arcade",
+    "technologies": [
+      "Unity 6",
+      "C#",
+      "URP",
+      "Input System",
+      "Cinemachine",
+      "TextMesh Pro"
+    ],
+    "tags": [
+      "C#",
+      "Cooking",
+      "Unity"
+    ],
+    "primaryTag": "Unity",
+    "role": "Solo — learning project",
+    "year": 2024,
+    "featured": true,
+    "mechanics": [
+      {
+        "title": "Polymorphic Counter Hierarchy",
+        "description": "Every station — clear, container, cutting, stove, plates, delivery and trash — derives from a single BaseCounter. Adding a new station means writing one subclass instead of touching the player or any counter that already works.",
+        "icon": "countertops"
+      },
+      {
+        "title": "Interface-Driven Interaction",
+        "description": "IKitchenObjectParent lets the player, the counters and the plates all hold ingredients through one shared contract, and IHaveProgress drives every progress bar in the game — chopping and frying alike — from the same UI component.",
+        "icon": "hub"
+      },
+      {
+        "title": "ScriptableObject-Driven Content",
+        "description": "Ingredients and recipes live as ScriptableObject assets rather than hard-coded values, so the recipe list and cutting or frying timings can be rebalanced in the editor without touching code.",
+        "icon": "database"
+      },
+      {
+        "title": "Event-Driven Game State",
+        "description": "A GameManager runs the countdown state machine while DeliveryManager validates plated orders against the active recipe list. C# events keep visuals and audio subscribed to gameplay rather than wired into it, which is why the visual scripts live in their own layer.",
+        "icon": "bolt"
+      }
+    ],
+    "codeHighlights": [
+      {
+        "label": "BaseCounter.cs",
+        "note": "The base class all seven station types inherit from.",
+        "url": "https://github.com/Nandy1002/KitchenChaosGameProject/blob/main/Assets/Scripts/CounterScripts/BaseCounter.cs"
+      },
+      {
+        "label": "IKitchenObjectParent.cs",
+        "note": "One contract that lets player, counters and plates all hold ingredients.",
+        "url": "https://github.com/Nandy1002/KitchenChaosGameProject/blob/main/Assets/Scripts/IKitchenObjectParent.cs"
+      },
+      {
+        "label": "IHaveProgress.cs",
+        "note": "Why chopping and frying share a single progress-bar component.",
+        "url": "https://github.com/Nandy1002/KitchenChaosGameProject/blob/main/Assets/Scripts/IHaveProgress.cs"
+      },
+      {
+        "label": "DeliveryManager.cs",
+        "note": "Validates a plated order against the active recipe list and scores it.",
+        "url": "https://github.com/Nandy1002/KitchenChaosGameProject/blob/main/Assets/Scripts/DeliveryManager.cs"
       }
     ]
   }

@@ -1,20 +1,42 @@
 [
   {
-    "category": "Languages",
-    "icon": "code",
-    "color": "text-primary",
-    "items": ["C#", "C++", "Python"]
+    "category": "Core — daily",
+    "items": [
+      "C#",
+      "Unity",
+      "Gameplay Systems",
+      "Rapid Prototyping",
+      "UI Systems",
+      "Game Feel Tuning",
+      "FTUE Implementation",
+      "Git & GitHub"
+    ]
   },
   {
-    "category": "Engine & Tools",
-    "icon": "deployed_code",
-    "color": "text-secondary",
-    "items": ["Unity (C#)", "Gameplay Systems", "Rapid Prototyping", "Game Feel Tuning", "UI Systems", "FTUE Implementation"]
+    "category": "Working knowledge",
+    "items": [
+      "Input System",
+      "ScriptableObjects",
+      "Cinemachine",
+      "Timeline",
+      "URP",
+      "TextMesh Pro",
+      "ProBuilder",
+      "Debugging & Profiling",
+      "Performance Optimization",
+      "Game Design Patterns",
+      "Data Structures",
+      "Plastic SCM"
+    ]
   },
   {
-    "category": "Technology & Concepts",
-    "icon": "construction",
-    "color": "text-primary",
-    "items": ["GitHub", "Plastic SCM", "Debugging & Profiling", "Performance Optimization", "Game Design Patterns", "Data Structures", "Iterative Development"]
+    "category": "Familiar",
+    "items": [
+      "C++",
+      "Python",
+      "AR / VR (Unity XR)",
+      "AI Navigation",
+      "Multiplayer Networking"
+    ]
   }
 ]
