@@ -9,6 +9,7 @@
       "UI Systems",
       "Game Feel Tuning",
       "FTUE Implementation",
+      "Object-Oriented Design",
       "Git & GitHub"
     ]
   },
@@ -17,13 +18,16 @@
     "items": [
       "Input System",
       "ScriptableObjects",
+      "Physics & Collisions",
+      "Particle Systems / VFX",
       "Cinemachine",
       "Timeline",
       "URP",
+      "AI Navigation",
       "TextMesh Pro",
       "ProBuilder",
       "Debugging & Profiling",
-      "Performance Optimization",
+      "Mobile Performance Optimisation",
       "Game Design Patterns",
       "Data Structures",
       "Plastic SCM"
@@ -32,10 +36,7 @@
   {
     "category": "Familiar",
     "items": [
-      "C++",
-      "Python",
       "AR / VR (Unity XR)",
-      "AI Navigation",
       "Multiplayer Networking"
     ]
   }
