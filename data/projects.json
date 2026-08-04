@@ -1,5 +1,86 @@
 [
   {
+    "id": "tictactale",
+    "title": "TicTacTale",
+    "subtitle": "Turn-Based Duel · In development",
+    "thumbnail": "assets/projects/tictactale/thumbnail.jpg",
+    "heroImage": "assets/projects/tictactale/thumbnail.jpg",
+    "demoVideo": "",
+    "prototypeLink": "",
+    "codeLink": "https://github.com/Nandy1002/TicTacTale-Game",
+    "webglLink": "",
+    "itchLink": "",
+    "description": "An original solo game in Unity 6 that turns tic-tac-toe into a best-of duel between two named fighters. Astraea and Kyra each enter with a pool of lives, every round won drains one from the loser, and the match only ends when a life bar empties — so a single lucky opening no longer decides anything. Currently in development: the full flow from main menu through character matching to the battle scene is playable, and most of the work so far has gone into making a board game feel like it has weight.",
+    "category": "Turn-Based / Arcade",
+    "spotlight": true,
+    "technologies": [
+      "Unity 6",
+      "C#",
+      "DOTween",
+      "2D Sprites",
+      "URP",
+      "TextMesh Pro"
+    ],
+    "tags": [
+      "C#",
+      "Arcade",
+      "Unity"
+    ],
+    "primaryTag": "Unity",
+    "role": "Solo Developer",
+    "year": 2026,
+    "featured": true,
+    "mechanics": [
+      {
+        "title": "Best-of Lives Duel",
+        "description": "Rather than one board deciding everything, each round won drains a life from the loser, who then starts the next round. A single lucky opening no longer wins the match, and the board resets without a scene reload — turn order, life pools and match-over state all live in one place, surfaced as segmented health bars either side of the board.",
+        "icon": "favorite"
+      },
+      {
+        "title": "Impact-Frame Placement",
+        "description": "Placing a pawn is a four-stage DOTween sequence: it accelerates down on InCubic so it lands rather than arrives, squashes wide and flat on contact, holds a 40 ms hitstop on the impact frame, then settles on OutBack for a single overshoot. The hitstop is what sells the weight — OutElastic was rejected here because several bounces read bouncy instead of heavy.",
+        "icon": "bolt"
+      },
+      {
+        "title": "Staggered Win Reveal",
+        "description": "When a line completes, each pawn on it clips shut to zero width, swaps to its win pose while nothing is on screen, and clips back open — staggered along the line so the reveal travels like a blade sweeping through. Only the X axis overshoots on the way out, because bouncing both axes double-bounces off the pinch.",
+        "icon": "auto_awesome"
+      },
+      {
+        "title": "Cross-Scene Match Handoff",
+        "description": "The matching screen's character picks travel into the battle scene through a static match record instead of a persistent GameObject, with a HasData flag so the battle scene still runs standalone on scene defaults when it is played directly in the editor. Whoever was picked becomes both the portrait beside the board and the token played into every cell.",
+        "icon": "swap_horiz"
+      },
+      {
+        "title": "Bot Opponent",
+        "description": "A coroutine-driven opponent that waits a randomised beat before moving, so its turn reads as thinking rather than as an instant response. The board is written as a generic N×N grid with row, column and both diagonal win checks, so the 3×3 rule set is a serialised field rather than a hard-coded assumption.",
+        "icon": "smart_toy"
+      }
+    ],
+    "codeHighlights": [
+      {
+        "label": "Pawn.cs",
+        "note": "The game feel work — strike, squash, hitstop and settle, with the easing choices explained in comments.",
+        "url": "https://github.com/Nandy1002/TicTacTale-Game/blob/main/Assets/Scripts/Pawn.cs"
+      },
+      {
+        "label": "BoardManager.cs",
+        "note": "Round flow, life pools and N×N win detection — the one place that owns match state.",
+        "url": "https://github.com/Nandy1002/TicTacTale-Game/blob/main/Assets/Scripts/BoardManager.cs"
+      },
+      {
+        "label": "MatchData.cs",
+        "note": "Static match record that carries the matchup across a scene load, with an editor-standalone fallback.",
+        "url": "https://github.com/Nandy1002/TicTacTale-Game/blob/main/Assets/Scripts/MatchData.cs"
+      },
+      {
+        "label": "Cell.cs",
+        "note": "A cell reports its click and nothing else — the manager decides whether the move is legal.",
+        "url": "https://github.com/Nandy1002/TicTacTale-Game/blob/main/Assets/Scripts/Cell.cs"
+      }
+    ]
+  },
+  {
     "id": "fps-inventory-system",
     "title": "FPS Inventory System",
     "subtitle": "Gameplay Prototype",
@@ -25,7 +106,7 @@
     ],
     "primaryTag": "Unity",
     "role": "Sole Developer",
-    "year": 2026,
+    "year": 2024,
     "featured": true,
     "mechanics": [
       {
@@ -85,7 +166,6 @@
     "itchLink": "",
     "description": "A horror prototype built in Unity 6. You play a software engineer whose mountain-forest getaway turns into something much worse. I built the interaction and inventory systems, the task and objective flow, and the atmosphere-driven level design, then staged the story beats in Timeline. Character movement starts from Unity's Starter Assets controller and the avatars come from Ready Player Me — the gameplay systems layered on top of them are mine.",
     "category": "Horror / Exploration",
-    "spotlight": true,
     "technologies": [
       "Unity 6",
       "C#",
