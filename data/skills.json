@@ -4,13 +4,15 @@
     "items": [
       "C#",
       "Unity",
+      "Object-Oriented Design",
+      "Data Structures & Algorithms",
       "Gameplay Systems",
       "Rapid Prototyping",
       "UI Systems",
       "Game Feel Tuning",
       "FTUE Implementation",
-      "Object-Oriented Design",
-      "Git & GitHub"
+      "Git & GitHub",
+      "Claude Code & Copilot"
     ]
   },
   {
@@ -18,8 +20,11 @@
     "items": [
       "Input System",
       "ScriptableObjects",
+      "State Machines",
+      "Turn-Based Game Logic",
       "Physics & Collisions",
       "Particle Systems / VFX",
+      "DOTween",
       "Cinemachine",
       "Timeline",
       "URP",
@@ -29,7 +34,7 @@
       "Debugging & Profiling",
       "Mobile Performance Optimisation",
       "Game Design Patterns",
-      "Data Structures",
+      "Python",
       "Plastic SCM"
     ]
   },
@@ -37,7 +42,9 @@
     "category": "Familiar",
     "items": [
       "AR / VR (Unity XR)",
-      "Multiplayer Networking"
+      "Multiplayer Networking",
+      "Django & REST APIs",
+      "NumPy / Pandas / Scikit-learn"
     ]
   }
 ]

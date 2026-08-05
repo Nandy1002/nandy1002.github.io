@@ -1,128 +1,163 @@
 # NABENDU DAS
 
-**Unity Game Developer | Gameplay Programmer**
+**Unity Developer | Interactive 3D Applications, Simulations & Visualisations**
 
-📧 nabendudas2001@gmail.com · 📞 +91-9475563268 · 📍 West Bengal, India (open to relocation / WFO)
-🎮 Portfolio: https://nandy1002.github.io · 💻 GitHub: github.com/Nandy1002 · 🔗 LinkedIn: linkedin.com/in/nabendu-das-1790a8202
+Email: nabendudas2001@gmail.com | Phone: +91-9475563268
+Location: West Bengal, India — **open to relocation to Zirakpur / Punjab for an in-office role**
+Portfolio: https://nandy1002.github.io | GitHub: github.com/Nandy1002 | LinkedIn: linkedin.com/in/nabendu-das-1790a8202
 
 ---
 
 ## Summary
 
-Unity developer with **3 years of professional experience since 2023**, including **18 months building 30+ mobile game
-prototypes and live projects** in Unity (C#) at Zapplogics — roughly two new gameplay loops a month, from concept to
-test-ready build. Strong in **Unity3D, C#, and object-oriented design**, with hands-on work across gameplay systems,
-physics-driven mechanics, UI flows and first-time user experience. Comfortable owning a mechanic end to end: designing
-the system, building it as reusable code, tuning the feel against playtest feedback, and profiling it until it holds up
-on low-end devices. Additional experience in multi-user VR simulation and Python/ML application development.
+Unity Developer with 3 years of professional experience since 2023, including 18 months of hands-on Unity (C#)
+development at Zapplogics shipping **30+ interactive applications, game prototypes and live projects** — roughly two
+new builds a month, each owned end to end from requirement to shipped build. Strong C# and object-oriented
+fundamentals, with a solid working grasp of Unity core systems: **scenes, prefabs, physics, animation, UI and the asset
+pipeline**. Experienced in **profiling and debugging builds** for frame rate, memory and load times across a wide range
+of target devices, and in **integrating APIs, backend services and third-party SDKs**. Uses **AI coding assistants —
+Claude Code and GitHub Copilot — daily in production work**, efficiently and as a standard part of the development
+loop, while keeping architecture and system-design decisions hand-authored. Additional experience in **multi-user VR
+simulation** and Python/Django backend and ML application development.
 
 ---
 
-## Skills
+## Technical Skills
 
-**Game Development** — Unity3D, C#, Gameplay Systems, Game Mechanics Design, Physics & Collisions, Particle Systems
-(VFX), Animation & Tweening, UI Systems, FTUE Implementation, Game Feel Tuning, Rapid Prototyping, Mobile Optimisation
+**Unity & Interactive 3D** — Unity3D, Unity 6, Scenes, Prefabs, Physics (2D & 3D), Collision Detection, Animation,
+UI Systems, Asset Pipeline, URP, Cinemachine, Timeline, Input System, ScriptableObjects, AI Navigation, DOTween,
+ProBuilder, TextMesh Pro, 3D Simulations & Visualisations, Rapid Prototyping
 
-**Unity Stack** — Input System, ScriptableObjects, Cinemachine, Timeline, URP, AI Navigation, DOTween, ProBuilder,
-TextMesh Pro, Unity XR, 2D & 3D
+**Languages** — C#, Python
 
-**Programming & Concepts** — Object-Oriented Programming, SOLID, Game Design Patterns, Data Structures & Algorithms,
-Clean/Reusable Code Architecture, Debugging & Profiling, Performance Optimisation, Iterative Development
+**Programming & Architecture** — Object-Oriented Programming, SOLID, Design Patterns, Data Structures & Algorithms,
+Clean and Performant Code, Reusable/Modular Architecture, Independent Feature Ownership, Iterative Development
 
-**Tools & Version Control** — Unity Editor, Git & GitHub, Plastic SCM, GitHub Copilot, Visual Studio
+**Performance & Debugging** — Unity Profiler, Performance Optimisation, Frame Rate Optimisation, Memory Optimisation,
+Load Time Optimisation, Cross-Device / Multi-Platform Optimisation, Build Debugging, Playtesting & QA
 
-**Secondary** — Python, Django, NumPy, Pandas, Scikit-learn
+**AR / VR & XR** — Unity XR, Multi-User VR Simulation, Real-Time State Synchronisation, VR Interaction Design
+
+**APIs & Integration** — REST API Integration, Third-Party SDK Integration, JSON Data Handling, Django Backend,
+Cross-Scene / Cross-System Data Flow
+
+**AI Coding Assistants (daily production use)** — Claude Code, GitHub Copilot, Antigravity, AI-Assisted Development,
+AI-Assisted Debugging, Prompt-Driven Implementation
+
+**Tools & Version Control** — Unity Editor, Git, GitHub, Plastic SCM, Visual Studio, VS Code
+
+**Data & Backend** — Django, NumPy, Pandas, Scikit-learn
 
 ---
 
-## Experience
+## Professional Experience
 
-### Unity Game Developer — Zapplogics Solution
-**Feb 2025 – Present · Remote**
+### Unity Developer — Zapplogics Solution
+**Feb 2025 – Present | Remote**
 
-- Developed **30+ mobile game prototypes and live projects** in Unity (C#), owning core gameplay loops, mechanics and
-  the rapid validation of player engagement.
-- Designed, built and maintained **efficient, reusable gameplay systems** — component-based architecture and
-  data-driven configuration so mechanics could be re-tuned or reused across projects without rewriting code.
-- Shipped **playable builds within short development cycles**, enabling concepts to be tested, kept or killed before
-  they consumed a full sprint.
-- Designed and implemented **UI systems, gameplay flows and first-time user experience** to improve onboarding and
+- Built **30+ interactive Unity (C#) applications, prototypes and live projects**, owning each feature **end to end
+  from requirement through to shipped build**.
+- Wrote **clean, performant C#** using component-based, modular architecture and data-driven configuration, so systems
+  could be reused and re-tuned across client projects without rewriting code.
+- Use **AI coding assistants (Claude Code and GitHub Copilot) as a daily part of production development** — scaffolding
+  systems, accelerating implementation, and working through debugging faster than by hand — while owning the
+  architecture and system-design decisions myself rather than delegating them.
+- Worked across **Unity core systems daily** — scenes, prefabs, physics, animation, UI and the asset pipeline —
+  including 2D and 3D interactive content.
+- **Profiled and debugged builds** for frame rate, memory usage and load times, optimising across target devices so
+  builds performed on low-end hardware and not only on high-spec machines.
+- Designed and implemented **UI systems, application flows and first-time user experience** to improve onboarding and
   retention.
-- **Collaborated with designers and artists** to iterate on game feel — tuning mechanics, responsiveness and
-  presentation directly from playtest feedback.
-- **Tested, debugged and optimised builds** for smooth, error-free performance across a wide range of Android devices,
-  not just high-end hardware.
-- Used AI-assisted tooling (GitHub Copilot) to accelerate boilerplate and debugging while keeping architecture
-  decisions and system design hand-authored.
+- **Collaborated with designers, developers and product stakeholders**, iterating on requirements, responsiveness and
+  presentation directly from testing feedback.
+- **Delivered under short development cycles**, enabling concepts to be validated, kept or dropped before consuming a
+  full sprint.
 
 ### AR/VR Developer Intern — Samsung Prism
-**Aug 2023 – Dec 2023 · Bangalore, India**
+**Aug 2023 – Dec 2023 | Bangalore, India**
 
-- Built a **multi-user VR simulation prototype** with real-time avatar synchronisation and dynamic positioning across
-  connected clients.
-- Implemented **interactive UI and player interaction systems**, iterating on responsiveness and comfort in headset.
-- Worked in a small team to debug issues and deliver stable, test-ready builds on a fixed research timeline.
+- Developed a **multi-user VR simulation prototype** in Unity with **real-time avatar synchronisation** and dynamic
+  positioning across connected clients.
+- Implemented **interactive UI and user interaction systems**, iterating on responsiveness and comfort in headset.
+- Collaborated in a small engineering team to **debug issues and deliver stable, test-ready builds** against a fixed
+  research timeline.
 
-### Salesforce Support / Release Intern — Volvo Car *(non-games)*
-**Feb 2024 – Jul 2024 · Bangalore, India**
+### Salesforce Support / Release Intern — Volvo Car
+**Feb 2024 – Jul 2024 | Bangalore, India**
 
-- Release and support workflows for an enterprise Salesforce deployment — process optimisation worth a 10% efficiency
-  gain, access control for 25+ accounts, and day-to-day coordination across cross-functional teams.
+- Supported an **enterprise platform deployment**, improving support workflow efficiency by **10%** through process
+  optimisation.
+- Managed **access control and user profiles for 25+ accounts**, ensuring data security.
+- **Collaborated with cross-functional teams** — engineering, support and product — following structured **release
+  workflows** on a client-facing enterprise product.
 
 ---
 
 ## Projects
 
-### TicTacTale — Turn-Based Duel Game (Unity 6, C#) · *solo, in development*
-`github.com/Nandy1002/TicTacTale-Game` · Jul 2026 – Present
+### TicTacTale — Interactive Turn-Based Application (Unity 6, C#) | Solo Developer, in development
+github.com/Nandy1002/TicTacTale-Game | Jul 2026 – Present
 
-An original solo game that reworks tic-tac-toe into a **best-of duel with life pools** — each round won drains a life
-from the loser, who then starts the next round. Built the full flow across three scenes (menu → character matching →
-battle), with the matchup carried between scenes via a static match record. Heavy focus on **game feel**: pawn placement
-is a **DOTween** sequence of strike, squash-and-stretch impact, **40 ms hitstop** and overshoot settle, with a staggered
-clip-and-swap reveal along the winning line. Board is written as a generic **N×N grid** with row, column and diagonal
-win detection, so the 3×3 rule set is a serialised field rather than a hard-coded assumption.
+Original solo Unity 6 project owned **end to end** — architecture, gameplay systems, UI and visual polish. Built the
+full flow across **three scenes** (main menu, character matching, battle) with match state carried between scenes
+through a static data record and a fallback path so each scene runs standalone. Implemented a generic **NxN grid** with
+row, column and diagonal resolution logic, driven by serialised fields rather than hard-coded values. Significant focus
+on **animation and visual polish**: placement is a **DOTween** sequence of strike, squash-and-stretch impact frame,
+40 ms hitstop and overshoot settle, with a staggered clip-and-swap reveal along the winning line. Uses **prefabs,
+SpriteRenderer, URP and TextMesh Pro**, with a safe-area handler for varied device aspect ratios.
 
-### The Cursed Chaos — Horror / Exploration Game (Unity 6)
-`github.com/Nandy1002/The-Cursed-Chaos-Horror-Game` · Jan 2025 – Feb 2025
+### The Cursed Chaos — 3D Interactive Horror Application (Unity 6)
+github.com/Nandy1002/The-Cursed-Chaos-Horror-Game | Jan 2025 – Feb 2025
 
-A first-person horror prototype with a complete gameplay loop. Built the **interaction and inventory systems**, a
-**task/objective system** driving player progression, and atmosphere-led level design, with story beats staged in
-**Timeline and Cinemachine**. Uses **URP lighting**, **AI Navigation** and **ScriptableObject-driven data**. Character
-movement builds on Unity's Starter Assets controller and avatars come from Ready Player Me; the gameplay systems layered
-on top are mine.
+A first-person 3D interactive experience with a complete end-to-end loop. Built the **interaction and inventory
+systems**, a **task/objective system** driving user progression, and atmosphere-led environment design, with sequenced
+story beats staged in **Timeline and Cinemachine**. Uses **URP lighting and rendering**, **AI Navigation** and
+**ScriptableObject-driven data**. Character movement builds on Unity's Starter Assets controller and avatars come from
+Ready Player Me; the systems layered on top are mine.
 
-### FPS Inventory System — Gameplay Prototype (Unity, C#)
-`github.com/Nandy1002/Gun-Inventory-System-prototype-` · Aug 2024 – Nov 2024
+### Realistic Object Collision — Unity Physics Study (Unity, C#)
+github.com/Nandy1002/Realistic-Object-Collision-in-Unity | Jan 2025
 
-A **modular inventory and weapon-interaction system**: raycast-based pickup, weapon switching, drop/cycle handling and
-a UI-driven inventory HUD. Built with **UI panels separated from the inventory and weapon models**, so slot behaviour
-and weapon data can change independently — 12 focused classes rather than one monolithic controller.
+A focused study in **Unity physics and collision behaviour**, tuning rigidbody interaction, colliders and impact
+response so that two objects meeting reads as physically believable rather than as a scripted event.
 
-### Kitchen Chaos — 3D Cooking Arcade (Unity 6)
-`github.com/Nandy1002/KitchenChaosGameProject` · 2024
+### FPS Inventory System — Modular Systems Prototype (Unity, C#)
+github.com/Nandy1002/Gun-Inventory-System-prototype- | Aug 2024 – Nov 2024
 
-A timed recipe-assembly game built as a deliberate study in **clean Unity architecture**, working through Code Monkey's
-course. Seven station types inherit from a single `BaseCounter`; `IKitchenObjectParent` and
-`IHaveProgress` interfaces let the player, counters and plates share one contract; recipes and ingredients live as
-**ScriptableObjects**; and a **C# event-driven** layer keeps visuals and audio subscribed to gameplay rather than wired
-into it.
+A **modular inventory and interaction system**: raycast-based object pickup, item switching, drop/cycle handling and a
+UI-driven inventory HUD. Built with **UI panels separated from the underlying data models**, so slot behaviour and item
+definitions change independently — 12 focused classes rather than one monolithic controller.
 
-### Real Estate Price Prediction System — Python / Django
-`github.com/Nandy1002/House_Price_Prediction_Project` · Dec 2024 – Feb 2025
+### Kitchen Chaos — 3D Simulation Study in Clean Unity Architecture (Unity 6)
+github.com/Nandy1002/KitchenChaosGameProject | 2024
 
-ML-backed property price estimation served through a Django web interface, using NumPy, Pandas and Scikit-learn for
-preprocessing, model training and real-time prediction.
+A timed process-simulation project built as a deliberate study in **clean, extensible Unity architecture**, working
+through Code Monkey's course. Seven station types inherit from a single base class; shared **C# interfaces** let
+multiple object types satisfy one contract; content lives in **ScriptableObjects** rather than hard-coded values; and a
+**C# event-driven** layer keeps visuals and audio subscribed to state rather than wired into it.
+
+### Real Estate Price Prediction System — Python / Django Web Application
+github.com/Nandy1002/House_Price_Prediction_Project | Dec 2024 – Feb 2025
+
+ML-backed property price estimation served through a **Django web interface** — data preprocessing, model training and
+real-time prediction using **NumPy, Pandas and Scikit-learn**, with the model exposed to the frontend as a live
+prediction endpoint.
+
+### Wuthering Waves Discord Bot — Third-Party API Integration (Python)
+github.com/Nandy1002/Wuwa-Discord-Bot | 2026
+
+A Discord bot integrating a **third-party API and SDK**, handling command routing, external data retrieval and
+structured response formatting.
 
 ---
 
 ## Education
 
 **Master of Computer Applications (MCA)** — RV College of Engineering, Bangalore
-Sep 2022 – Sep 2024 · **CGPA 8.83 / 10**
+Sep 2022 – Sep 2024 | CGPA 8.83 / 10
 
 **B.Sc. Mathematics** — The University of Burdwan, West Bengal
-Jul 2019 – Aug 2022 · **CGPA 8.89 / 10**
+Jul 2019 – Aug 2022 | CGPA 8.89 / 10
 
 ---
 

@@ -1,9 +1,30 @@
 /* Renders the project grid (home + projects page) and the skills list. */
 
 document.addEventListener('DOMContentLoaded', () => {
+    updateTenure();
     loadProjects();
     loadSkills();
 });
+
+/* Keeps a "N yrs" figure honest without anyone remembering to edit it.
+   data-since is "YYYY-MM" of the start date. */
+function updateTenure() {
+    document.querySelectorAll('[data-since]').forEach(el => {
+        const [year, month] = el.dataset.since.split('-').map(Number);
+        if (!year || !month) return;
+
+        const now = new Date();
+        const months = (now.getFullYear() - year) * 12 + (now.getMonth() + 1 - month);
+        if (months < 1) return;
+
+        if (months < 12) {
+            el.textContent = months === 1 ? '1 mo' : `${months} mos`;
+            return;
+        }
+        const years = Math.round((months / 12) * 2) / 2;   // nearest half-year
+        el.textContent = `${Number.isInteger(years) ? years : years.toFixed(1)} yrs`;
+    });
+}
 
 /* --- Helpers ------------------------------------------------------------ */
 function esc(value) {
