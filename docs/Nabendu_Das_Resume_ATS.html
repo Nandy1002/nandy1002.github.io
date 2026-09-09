@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabendu Das - Resume</title>
+    <style>
+        /* ATS-Friendly Print CSS */
+        :root {
+            --text-color: #000000;
+            --link-color: #000000;
+            --accent-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 40px;
+            font-size: 11pt;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 24pt;
+            margin: 0 0 5px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 10.5pt;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .contact-info a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .separator {
+            color: #666;
+            margin: 0 2px;
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 13pt;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 2px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* Job & Project Items */
+        .item {
+            margin-bottom: 12px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 11.5pt;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 11pt;
+            margin-bottom: 4px;
+        }
+
+        .item-date {
+            font-size: 10.5pt;
+        }
+
+        .item-location {
+            font-size: 10.5pt;
+            font-style: italic;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 10.5pt;
+        }
+
+        /* Skills */
+        .skills-container {
+            font-size: 10.5pt;
+        }
+
+        .skill-category {
+            font-weight: bold;
+        }
+
+        /* Print formatting */
+        @media print {
+            body {
+                padding: 0;
+                margin: 0.5in;
+                max-width: 100%;
+                -webkit-print-color-adjust: exact;
+            }
+            @page {
+                size: letter;
+                margin: 0.5in;
+            }
+            a {
+                text-decoration: none !important;
+                color: #000 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nabendu Das</h1>
+        <div class="contact-info">
+            <a href="mailto:nabendudas2001@gmail.com">nabendudas2001@gmail.com</a>
+            <span class="separator">|</span>
+            <span>+91-9475563268</span>
+            <span class="separator">|</span>
+            <a href="https://nandy1002.github.io/">nandy1002.github.io</a>
+            <span class="separator">|</span>
+            <a href="https://github.com/Nandy1002">github.com/Nandy1002</a>
+            <span class="separator">|</span>
+            <a href="https://linkedin.com/in/nabendu-das">linkedin.com/in/nabendu-das</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p style="margin:0; font-size: 10.5pt;">
+            Gameplay Programmer with 3 years of professional experience building 30+ mobile game prototypes and live projects. Strong foundation in C#, C++, OOP, and component-based architecture. Adept at system design, creating reusable code, tuning game feel, and optimizing for low-end devices across Unity and Unreal Engine.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div style="margin-bottom: 3px;"><span class="skill-category">Game Engines & Tech:</span> Unity (URP, UI Toolkit, Cinemachine, DOTween, Timeline, XR), Unreal Engine 5 (UMG, Online Subsystem, Networking)</div>
+            <div style="margin-bottom: 3px;"><span class="skill-category">Programming Languages:</span> C#, C++, Blueprints, Python, JavaScript</div>
+            <div style="margin-bottom: 3px;"><span class="skill-category">Core Competencies:</span> Gameplay Systems, Multiplayer Networking, Mechanics Design, Rapid Prototyping, Game Feel, UI/FTUE</div>
+            <div><span class="skill-category">Tools & Workflows:</span> Git, Plastic SCM, Visual Studio, GitHub Copilot, Profiling & Optimization, SOLID Principles</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Unity Game Developer</span>
+                <span class="item-date">Feb 2025 – Present</span>
+            </div>
+            <div class="item-header">
+                <span class="item-subtitle">Zapplogics Solution</span>
+                <span class="item-location">Remote</span>
+            </div>
+            <ul>
+                <li>Developed <strong>30+ mobile prototypes and live projects</strong>, owning core gameplay loops from concept to rapid validation.</li>
+                <li>Engineered efficient, reusable gameplay systems using component-based architecture to accelerate cross-project development.</li>
+                <li>Designed UI systems and First-Time User Experiences (FTUE) to improve player onboarding and retention.</li>
+                <li>Optimized builds through aggressive profiling to ensure stable 60 FPS performance across a wide range of low-end Android devices.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">AR/VR Developer Intern</span>
+                <span class="item-date">Aug 2023 – Dec 2023</span>
+            </div>
+            <div class="item-header">
+                <span class="item-subtitle">Samsung Prism</span>
+                <span class="item-location">Bangalore, India</span>
+            </div>
+            <ul>
+                <li>Built a multi-user VR simulation featuring real-time avatar synchronization and dynamic positioning algorithms.</li>
+                <li>Iterated heavily on interactive spatial UI and player comfort settings, delivering stable builds on a strict research timeline.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Salesforce Support / Release Intern</span>
+                <span class="item-date">Feb 2024 – Jul 2024</span>
+            </div>
+            <div class="item-header">
+                <span class="item-subtitle">Volvo Car</span>
+                <span class="item-location">Bangalore, India</span>
+            </div>
+            <ul>
+                <li>Optimized release workflows resulting in a 10% efficiency gain and managed access control across cross-functional teams.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Capture The Flag (Multiplayer FPS)</span>
+                <span class="item-date">Unreal Engine 5, C++, Blueprints</span>
+            </div>
+            <div style="font-size: 10.5pt; font-style: italic; margin-bottom: 4px;">Networked multiplayer FPS featuring custom lobby and replicated game state</div>
+            <ul>
+                <li>Developed a full lobby and session system handling player count, team balancing, and matchmaking transitions.</li>
+                <li>Implemented client-server architecture for a replicated flag system (pickup, carry, drop, and return mechanics).</li>
+                <li>Engineered a custom GameMode and GameState to manage server-only scoring, timer synchronization, and client HUD updates via UMG.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">TicTacTale</span>
+                <span class="item-date">Unity 6, C#, DOTween</span>
+            </div>
+            <div style="font-size: 10.5pt; font-style: italic; margin-bottom: 4px;">Best-of-lives duel game adapting classic mechanics with heavy game feel</div>
+            <ul>
+                <li>Designed a scalable N×N board architecture and developed a coroutine-driven bot opponent.</li>
+                <li>Polished game feel using DOTween to implement hitstop, overshoot, and squash-and-stretch feedback for pawn placement.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">The Cursed Chaos</span>
+                <span class="item-date">Unity 6, C#, AI Navigation</span>
+            </div>
+            <div style="font-size: 10.5pt; font-style: italic; margin-bottom: 4px;">First-person horror exploration prototype</div>
+            <ul>
+                <li>Built a robust interaction and inventory system for flashlight-led traversal and objective tracking.</li>
+                <li>Integrated NavMesh-driven AI pursuit behaviors and Timeline/Cinemachine story sequences.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">FPS Inventory System</span>
+                <span class="item-date">Unity, C#, UI Toolkit</span>
+            </div>
+            <div style="font-size: 10.5pt; font-style: italic; margin-bottom: 4px;">Modular gameplay prototype</div>
+            <ul>
+                <li>Developed a modular inventory architecture across 12 decoupled classes handling raycast pickups and cycle logic.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Master of Computer Applications (MCA)</span>
+                <span class="item-date">Sep 2022 – Sep 2024</span>
+            </div>
+            <div class="item-header">
+                <span class="item-subtitle">RV College of Engineering, Bangalore</span>
+                <span class="item-location">CGPA: 8.83</span>
+            </div>
+        </div>
+
+        <div class="item" style="margin-bottom: 0;">
+            <div class="item-header">
+                <span class="item-title">B.Sc. Mathematics</span>
+                <span class="item-date">Jul 2019 – Aug 2022</span>
+            </div>
+            <div class="item-header">
+                <span class="item-subtitle">The University of Burdwan, West Bengal</span>
+                <span class="item-location">CGPA: 8.89</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -5,7 +5,7 @@
     "subtitle": "Multiplayer FPS Prototype · Unreal Engine 5",
     "thumbnail": "assets/projects/capture-the-flag/thumbnail.jpg",
     "heroImage": "assets/projects/capture-the-flag/thumbnail.jpg",
-    "demoVideo": "",
+    "demoVideo": "assets/projects/capture-the-flag/demo.mp4",
     "prototypeLink": "",
     "codeLink": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-",
     "webglLink": "",
@@ -74,8 +74,8 @@
         "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/blob/main/Content/Blueprints/BP_ShooterGameState.uasset"
       },
       {
-        "label": "BP_LobbyGameMode",
-        "note": "Session hosting and joining flow — handles player count, team balancing and lobby-to-game transition.",
+        "label": "BP_LobbyGameMode / C++ Sessions",
+        "note": "Custom C++ and Blueprint lobby handling session hosting, team balancing, and matchmaking transitions.",
         "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/blob/main/Content/Blueprints/BP_LobbyGameMode.uasset"
       },
       {
