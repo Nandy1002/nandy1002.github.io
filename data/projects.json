@@ -54,24 +54,34 @@
     ],
     "codeHighlights": [
       {
-        "label": "CTFGameMode",
+        "label": "BP_ShooterGameMode",
         "note": "Server-only game flow — match start, score tracking, capture validation and match end.",
-        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/blob/main/Content/Blueprints/BP_ShooterGameMode.uasset"
       },
       {
-        "label": "FlagActor",
-        "note": "Replicated flag pickup, carry attachment, drop and return logic.",
-        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+        "label": "WB_Flag_Blue / WB_Flag_Red",
+        "note": "The flag actors — replicated pickup, carry attachment, drop and return-to-base logic.",
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/blob/main/Content/Blueprints/WB_Flag_Blue.uasset"
       },
       {
-        "label": "CTFPlayerController",
+        "label": "BP_ShooterPlayerController",
         "note": "Team assignment, respawn requests and client-side HUD updates.",
-        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/blob/main/Content/Blueprints/BP_ShooterPlayerController.uasset"
       },
       {
-        "label": "CTFGameState",
+        "label": "BP_ShooterGameState",
         "note": "Replicated score and timer — the single source of truth all clients read from.",
-        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/blob/main/Content/Blueprints/BP_ShooterGameState.uasset"
+      },
+      {
+        "label": "BP_LobbyGameMode",
+        "note": "Session hosting and joining flow — handles player count, team balancing and lobby-to-game transition.",
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/blob/main/Content/Blueprints/BP_LobbyGameMode.uasset"
+      },
+      {
+        "label": "Blueprints/UI/",
+        "note": "All UMG widget blueprints — main menu, lobby, session browser and end-game screen.",
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-/tree/main/Content/Blueprints/UI"
       }
     ]
   },
