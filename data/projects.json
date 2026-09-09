@@ -1,5 +1,81 @@
 [
   {
+    "id": "capture-the-flag",
+    "title": "Capture The Flag",
+    "subtitle": "Multiplayer FPS Prototype · Unreal Engine 5",
+    "thumbnail": "assets/projects/capture-the-flag/thumbnail.jpg",
+    "heroImage": "assets/projects/capture-the-flag/thumbnail.jpg",
+    "demoVideo": "",
+    "prototypeLink": "",
+    "codeLink": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-",
+    "webglLink": "",
+    "itchLink": "",
+    "description": "A multiplayer FPS prototype built in Unreal Engine 5. Two teams compete in fast-paced networked matches — infiltrate the enemy base, grab their flag, and bring it back to score before the opposing team does the same. The project covers the full network game flow: session management, team assignment, flag pickup and carrier tracking, respawn logic, and a HUD that updates in real time across all connected clients.",
+    "category": "Multiplayer FPS",
+    "spotlight": true,
+    "technologies": [
+      "Unreal Engine 5",
+      "Blueprints",
+      "C++",
+      "Unreal Networking",
+      "Game Framework",
+      "UMG / HUD"
+    ],
+    "tags": [
+      "Unreal",
+      "FPS",
+      "Multiplayer"
+    ],
+    "primaryTag": "Unreal",
+    "role": "Solo Developer",
+    "year": 2026,
+    "featured": true,
+    "mechanics": [
+      {
+        "title": "Replicated Flag System",
+        "description": "The flag actor uses Unreal's replication system to keep pickup state, carrier identity and flag position consistent across all clients. When a player grabs the flag it attaches to them and triggers a server-authoritative carry state; drop and capture events are replicated back to every connected machine.",
+        "icon": "flag"
+      },
+      {
+        "title": "Team-Based Spawning",
+        "description": "Players are assigned to teams on join and respawn at designated team spawn points. Spawn selection picks the point farthest from current enemies to avoid spawn-killing, with a short invincibility window on respawn.",
+        "icon": "groups"
+      },
+      {
+        "title": "Network Game State & Scoring",
+        "description": "A replicated Game State tracks each team's capture count and remaining match time. Capture events increment the score server-side and broadcast to all clients instantly, ending the match when a team reaches the cap limit.",
+        "icon": "leaderboard"
+      },
+      {
+        "title": "Real-Time HUD",
+        "description": "A UMG-based HUD shows team scores, match timer, flag carrier status and kill feed. All widgets bind directly to replicated Game State values so the UI stays in sync across all players without additional messaging.",
+        "icon": "dashboard"
+      }
+    ],
+    "codeHighlights": [
+      {
+        "label": "CTFGameMode",
+        "note": "Server-only game flow — match start, score tracking, capture validation and match end.",
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+      },
+      {
+        "label": "FlagActor",
+        "note": "Replicated flag pickup, carry attachment, drop and return logic.",
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+      },
+      {
+        "label": "CTFPlayerController",
+        "note": "Team assignment, respawn requests and client-side HUD updates.",
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+      },
+      {
+        "label": "CTFGameState",
+        "note": "Replicated score and timer — the single source of truth all clients read from.",
+        "url": "https://github.com/Nandy1002/Capture-The-Flag-Multiplayer-FPS---Unreal-"
+      }
+    ]
+  },
+  {
     "id": "tictactale",
     "title": "TicTacTale",
     "subtitle": "Turn-Based Duel · In development",

@@ -41,6 +41,8 @@
   {
     "category": "Familiar",
     "items": [
+      "Unreal Engine 5",
+      "Blueprints",
       "AR / VR (Unity XR)",
       "Multiplayer Networking",
       "Django & REST APIs",
