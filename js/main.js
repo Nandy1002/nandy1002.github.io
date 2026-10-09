@@ -17,12 +17,13 @@ function updateTenure() {
         const months = (now.getFullYear() - year) * 12 + (now.getMonth() + 1 - month);
         if (months < 1) return;
 
-        if (months < 12) {
-            el.textContent = months === 1 ? '1 mo' : `${months} mos`;
-            return;
-        }
-        const years = Math.round((months / 12) * 2) / 2;   // nearest half-year
-        el.textContent = `${Number.isInteger(years) ? years : years.toFixed(1)} yrs`;
+        // Exact years + months: rounding to a half-year turned 1 yr 8 mos into "1.5 yrs".
+        const y = Math.floor(months / 12);
+        const m = months % 12;
+        const parts = [];
+        if (y) parts.push(y === 1 ? '1 yr' : `${y} yrs`);
+        if (m) parts.push(m === 1 ? '1 mo' : `${m} mos`);
+        el.textContent = parts.join(' ');
     });
 }
 
@@ -38,6 +39,17 @@ function truncate(text, max) {
     const cut = text.slice(0, max);
     // Trim trailing punctuation so we never render "worse.…" as "worse...."
     return cut.slice(0, cut.lastIndexOf(' ')).replace(/[\s.,;:—-]+$/, '') + '…';
+}
+
+/* Overlay labels on a thumbnail. "Shipped" and "Play in browser" go first — a recruiter
+   scanning the grid should spot released, playable work without opening anything. */
+function badges(p) {
+    const items = [];
+    if (p.shipped) items.push('<span class="badge badge--accent">Shipped</span>');
+    if (p.embedUrl) items.push('<span class="badge">Play in browser</span>');
+    else if (p.shipped && p.platform) items.push(`<span class="badge">${esc(p.platform)}</span>`);
+    if (p.demoVideo) items.push('<span class="badge">Demo video</span>');
+    return items.length ? `<div class="badges">${items.join('')}</div>` : '';
 }
 
 /* Swaps a missing thumbnail for a striped placeholder instead of a broken image. */
@@ -85,7 +97,7 @@ function renderHeroFeature(projects) {
             ${project.thumbnail
             ? `<img src="${esc(project.thumbnail)}" alt="${esc(project.title)} screenshot" onerror="thumbFallback(this)">`
             : ''}
-            ${project.demoVideo ? '<span class="badge">Demo video</span>' : ''}
+            ${badges(project)}
         </div>
         <div class="hero-feature-meta">
             <span class="eyebrow">Featured project</span>
@@ -101,19 +113,21 @@ function render(grid, projects) {
     }
 
     grid.innerHTML = projects.map(p => {
-        const tags = (p.tags || []).map(t => `<span class="chip">${esc(t)}</span>`).join('');
+        // "Shipped" already shows as a thumbnail badge; it stays a tag only for the filter bar.
+        const tags = (p.tags || []).filter(t => !(p.shipped && t === 'Shipped'))
+            .map(t => `<span class="chip">${esc(t)}</span>`).join('');
         const thumb = p.thumbnail
             ? `<img src="${esc(p.thumbnail)}" alt="${esc(p.title)} screenshot" loading="lazy" onerror="thumbFallback(this)">`
             : '';
 
-        const badge = p.demoVideo ? '<span class="badge">Demo video</span>' : '';
+        const meta = [p.role, p.jam?.name, p.year].filter(Boolean).map(esc).join(' · ');
 
         return `
         <a class="card card--link project-card reveal" href="project.html?id=${encodeURIComponent(p.id)}">
-            <div class="thumb${thumb ? '' : ' thumb--empty'}" data-label="${esc(p.title)}">${thumb}${badge}</div>
+            <div class="thumb${thumb ? '' : ' thumb--empty'}" data-label="${esc(p.title)}">${thumb}${badges(p)}</div>
             <div class="card-body">
                 <h3>${esc(p.title)}</h3>
-                <p class="meta-line">${esc(p.role)} · ${esc(p.year)}</p>
+                <p class="meta-line">${meta}</p>
                 <p class="desc">${esc(truncate(p.description, 130))}</p>
                 <div class="chips">${tags}</div>
                 <span class="btn btn--quiet">
@@ -134,7 +148,10 @@ function setupFilters(grid, projects) {
     const bar = document.getElementById('project-filters');
     if (!bar || projects.length < 4) return;
 
-    const tags = [...new Set(projects.flatMap(p => p.tags || []))].sort();
+    // Released work is the first thing a reviewer filters for, so those tags lead the bar.
+    const pinned = ['Shipped', 'Game Jam'];
+    const all = new Set(projects.flatMap(p => p.tags || []));
+    const tags = [...pinned.filter(t => all.has(t)), ...[...all].filter(t => !pinned.includes(t)).sort()];
     if (!tags.length) return;
 
     bar.hidden = false;

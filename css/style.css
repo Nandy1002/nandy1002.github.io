@@ -467,6 +467,12 @@ p {
   color: var(--ink);
 }
 
+/* Role targets under the contact heading. */
+.roles {
+  justify-content: center;
+  margin-top: 18px;
+}
+
 .availability .dot {
   width: 7px;
   height: 7px;
@@ -510,11 +516,19 @@ p {
   color: var(--ink);
 }
 
-/* "There is footage here" — otherwise a static poster reads as a screenshot. */
-.badge {
+/* Thumbnail labels: "Shipped", "Play in browser", "Demo video" — otherwise a static
+   poster reads as a screenshot. */
+.badges {
   position: absolute;
   left: 12px;
+  right: 12px;
   bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge {
   display: inline-block;
   padding: 4px 10px;
   border-radius: 999px;
@@ -527,6 +541,13 @@ p {
   letter-spacing: 0.02em;
 }
 
+.badge--accent {
+  background: var(--accent);
+  border-color: transparent;
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
 .meta-line {
   font-size: 0.8rem;
   color: var(--dim);
@@ -536,7 +557,7 @@ p {
 /* Small factual stat strip */
 .stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
   background: var(--line-soft);
   border: 1px solid var(--line-soft);
@@ -558,6 +579,9 @@ p {
 }
 
 .stats span {
+  display: block;
+  margin-top: 2px;
+  line-height: 1.45;
   font-size: 0.82rem;
   color: var(--dim);
 }
@@ -700,6 +724,17 @@ p {
 
 .job {
   padding: 26px;
+}
+
+/* Separates the game-jam group from paid roles within the same timeline. */
+.timeline-label {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: -12px;
 }
 
 .job-head {
@@ -854,6 +889,148 @@ p {
 
 .media-frame img {
   object-fit: cover;
+}
+
+/* Inline links inside running text, which otherwise inherit colour and lose their underline. */
+.text-link,
+.meta-row dd a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+}
+
+.text-link:hover,
+.meta-row dd a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+/* Playable build. Sized to the build's native canvas (set inline from embedSize),
+   since Unity's WebGL template renders at a fixed resolution on desktop. */
+.media-frame--game {
+  max-width: var(--game-w, 960px);
+  margin-inline: auto;
+  aspect-ratio: var(--game-ratio, 16 / 9);
+  background: #231f20;
+}
+
+.media-frame--game iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.game-start {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.media-frame .game-start img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+}
+
+.game-start:hover img,
+.game-start:focus-visible img {
+  opacity: 0.2;
+}
+
+.game-start-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  color: var(--ink);
+}
+
+.game-start-label .btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Pixel art is scaled up, so keep the pixels hard-edged instead of blurred. */
+.pixelated img {
+  image-rendering: pixelated;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 28px;
+  margin: 18px 0 0;
+}
+
+.controls div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.controls dt {
+  font-size: 0.8rem;
+  color: var(--dim);
+}
+
+.controls dd {
+  margin: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  background: var(--panel-2);
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.78rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.gallery-item {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  background: #000;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Game Boy shots are 10:9 — show them whole rather than cropping the HUD. */
+.gallery.pixelated .gallery-item img {
+  aspect-ratio: 10 / 9;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
 }
 
 .feature-grid {
@@ -1071,8 +1248,9 @@ p {
     padding-block: 64px;
   }
 
-  .stats {
-    grid-template-columns: 1fr;
+  /* The availability line wraps on phones; a full pill shape looks wrong over two lines. */
+  .availability {
+    border-radius: var(--radius-lg);
   }
 
   .site-footer .wrap {

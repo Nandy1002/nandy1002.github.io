@@ -11,6 +11,19 @@ Gameplay-focused developer working across Unity and Unreal Engine 5. I build fas
 
 ## 🚀 Featured Projects
 
+### [The Cursed Isle of Colchis](https://nandy1002.github.io/project.html?id=cursed-isle-of-colchis) — Unity · Shipped · GBJAM 14
+A Game Boy-style action RPG set on the island of the Golden Fleece, made by a team of five for GBJAM 14 and released on itch.io. **Playable in the browser.**
+- **Role**: Lead Gameplay Programmer (team of 5).
+- **In the game**: Real-time sword combat, multi-phase boss fights, an in-world shop economy, Game Boy input mapping — all inside GBJAM's 160×144, four-colour limit.
+- **Tech**: Unity, C#, WebGL.
+- **Play**: [nandy1002.itch.io/the-cursed-isle-of-colchis](https://nandy1002.itch.io/the-cursed-isle-of-colchis)
+
+### [Beelonging](https://nandy1002.github.io/project.html?id=beelonging) — Unity · Shipped · GoedWare Game Jam #17
+A low-poly 3D flying adventure: guide a wind-blown bee home, collecting pollen and avoiding frogs, skunks, spiders and the water below. Made by a team of five and released on itch.io for Windows.
+- **Role**: Gameplay Programmer (team of 5).
+- **Tech**: Unity, C#.
+- **Download**: [aha-games.itch.io/beelonging](https://aha-games.itch.io/beelonging)
+
 ### [Capture The Flag](https://nandy1002.github.io/project.html?id=capture-the-flag) — Unreal Engine 5
 A multiplayer FPS prototype built in Unreal Engine 5. Two teams compete in fast-paced networked matches: infiltrate the enemy base, grab their flag, bring it home.
 - **Key systems**: Replicated flag pickup/carry/return, team-based spawning, networked Game State scoring, UMG HUD synced across all clients, lobby + session flow.
@@ -75,7 +88,7 @@ js/main.js             project grid + skills  (home & projects pages)
 js/project.js          project detail page
 data/projects.json     one entry per project
 data/skills.json       skill groups rendered on the home page
-assets/projects/<id>/  thumbnail.jpg + optional demo.mp4
+assets/projects/<id>/  thumbnail.jpg + optional demo.mp4 / screenshots
 ```
 
 ### Adding a project
@@ -83,6 +96,7 @@ assets/projects/<id>/  thumbnail.jpg + optional demo.mp4
 1. Add an entry to `data/projects.json`.
 2. Drop a `thumbnail.jpg` (16:9) and an optional `demo.mp4` into `assets/projects/<id>/`, then set `thumbnail` / `demoVideo` to those paths.
 3. Set `"featured": true` to surface it on the home page.
+4. For a released game, add any of: `shipped`, `platform`, `team`, `jam` (`name` / `url` / `entryUrl`), `itchLink`, `controls`, `gallery` and `pixelArt`. Set `embedUrl` (an `https://itch.io/embed-upload/<id>` link) plus `embedSize` to make a browser build playable on its project page — it loads only when the visitor clicks Play.
 
 If a thumbnail is missing the card falls back to a placeholder rather than a broken image, and the detail page hides the media block entirely.
 
@@ -102,7 +116,7 @@ Or use the **Live Server** extension in VS Code.
 
 ## 📫 Get In Touch
 
-**nabendudas2001@gmail.com** — open to gameplay programming roles.
+**nabendudas2001@gmail.com** — open to Game Developer, Unity Developer, Unreal Developer and Gameplay Programmer roles.
 
 <div align="left">
   <a href="https://www.linkedin.com/in/nabendu-das-1790a8202/" target="_blank">

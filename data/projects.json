@@ -1,5 +1,118 @@
 [
   {
+    "id": "cursed-isle-of-colchis",
+    "title": "The Cursed Isle of Colchis",
+    "subtitle": "Game Boy-Style Action RPG · GBJAM 14",
+    "thumbnail": "assets/projects/cursed-isle-of-colchis/thumbnail.png",
+    "heroImage": "assets/projects/cursed-isle-of-colchis/cover.jpg",
+    "demoVideo": "",
+    "prototypeLink": "",
+    "codeLink": "",
+    "webglLink": "",
+    "itchLink": "https://nandy1002.itch.io/the-cursed-isle-of-colchis",
+    "embedUrl": "https://itch.io/embed-upload/19577484?color=231f20",
+    "embedSize": {
+      "width": 480,
+      "height": 432
+    },
+    "shipped": true,
+    "platform": "Browser (WebGL)",
+    "team": "5 developers",
+    "jam": {
+      "name": "GBJAM 14",
+      "url": "https://itch.io/jam/gbjam-14",
+      "entryUrl": "https://itch.io/jam/gbjam-14/rate/5035147"
+    },
+    "pixelArt": true,
+    "description": "A Game Boy-style action RPG made by a team of five for GBJAM 14 and released on itch.io, where it plays straight in the browser. Set on Colchis, the island of the Golden Fleece from Greek myth, it is a top-down action adventure: explore a cursed dungeon, open chests, trade at Aeetes' Emporium and fight your way through to the boss. GBJAM holds every entry to the Game Boy's 160×144 screen and a four-colour palette, so everything had to read clearly at that size. I was the lead gameplay programmer and wrote most of the game's code in Unity, then shipped it as a WebGL build.",
+    "category": "Action RPG · Game Jam",
+    "technologies": [
+      "Unity",
+      "C#",
+      "WebGL",
+      "2D Pixel Art",
+      "itch.io"
+    ],
+    "tags": [
+      "Shipped",
+      "Game Jam",
+      "Action RPG",
+      "Unity"
+    ],
+    "primaryTag": "Unity",
+    "role": "Lead Gameplay Programmer",
+    "year": 2026,
+    "featured": true,
+    "controls": [
+      {
+        "keys": "Arrows / WASD",
+        "action": "Move"
+      },
+      {
+        "keys": "Z / C / I",
+        "action": "Attack"
+      },
+      {
+        "keys": "X / J / Space",
+        "action": "Interact"
+      },
+      {
+        "keys": "Enter / Left Shift",
+        "action": "Pause"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "assets/projects/cursed-isle-of-colchis/cover.jpg",
+        "alt": "Title screen"
+      },
+      {
+        "src": "assets/projects/cursed-isle-of-colchis/shot1.jpg",
+        "alt": "Cyclops boss fight"
+      },
+      {
+        "src": "assets/projects/cursed-isle-of-colchis/shot2.jpg",
+        "alt": "Aeetes' Emporium shop"
+      },
+      {
+        "src": "assets/projects/cursed-isle-of-colchis/shot3.jpg",
+        "alt": "Dungeon room with a treasure chest"
+      },
+      {
+        "src": "assets/projects/cursed-isle-of-colchis/shot4.jpg",
+        "alt": "Exploring the island shore"
+      },
+      {
+        "src": "assets/projects/cursed-isle-of-colchis/shot5.jpg",
+        "alt": "Boss dialogue before the fight"
+      }
+    ],
+    "mechanicsEyebrow": "Shipped jam build",
+    "mechanicsTitle": "What's in the game",
+    "mechanics": [
+      {
+        "title": "Game Boy Constraints",
+        "description": "GBJAM rules cap the game at a 160×144 screen and four colours, rendered here at 3× in the browser. Every sprite, HUD bar and line of dialogue had to stay readable inside those limits.",
+        "icon": "grid_on"
+      },
+      {
+        "title": "Real-Time Combat & Bosses",
+        "description": "Sword combat against dungeon enemies with a player HP bar, building to boss encounters that have their own health bar, pre-fight dialogue and a second phase.",
+        "icon": "swords"
+      },
+      {
+        "title": "Shop & Economy",
+        "description": "Drachmae collected in the world are spent at Aeetes' Emporium on items like the Nectar Vial (+10 max HP), so exploration feeds straight back into how strong the player is for the boss.",
+        "icon": "storefront"
+      },
+      {
+        "title": "Game Boy Input Mapping",
+        "description": "Every action maps to the Game Boy's D-pad, A, B, Select and Start, with two or three keyboard bindings each so it plays comfortably on any layout.",
+        "icon": "gamepad"
+      }
+    ]
+  },
+  {
     "id": "capture-the-flag",
     "title": "Capture The Flag",
     "subtitle": "Multiplayer FPS Prototype · Unreal Engine 5",
@@ -86,6 +199,106 @@
     ]
   },
   {
+    "id": "beelonging",
+    "title": "Beelonging",
+    "subtitle": "3D Flying Adventure · GoedWare Game Jam #17",
+    "thumbnail": "assets/projects/beelonging/thumbnail.jpg",
+    "heroImage": "assets/projects/beelonging/shot1.jpg",
+    "demoVideo": "",
+    "prototypeLink": "",
+    "codeLink": "",
+    "webglLink": "",
+    "itchLink": "https://aha-games.itch.io/beelonging",
+    "embedUrl": "",
+    "shipped": true,
+    "platform": "Windows",
+    "team": "5 developers",
+    "jam": {
+      "name": "GoedWare Game Jam #17",
+      "url": "https://itch.io/jam/goedware-game-jam-17",
+      "entryUrl": "https://itch.io/jam/goedware-game-jam-17/rate/5066156"
+    },
+    "description": "A low-poly 3D adventure made by a team of five for GoedWare Game Jam #17 and released on itch.io as a Windows build. Strong winds have carried a bee far from home, and you fly her back across meadows, rivers and hills, filling a honey bucket with pollen and steering clear of frogs, skunks and spiders on the way to the hive. Touch the water or let your HP hit zero and the run is over. I was one of the team's gameplay programmers, working in Unity.",
+    "category": "3D Adventure · Game Jam",
+    "technologies": [
+      "Unity",
+      "C#",
+      "Low-Poly 3D",
+      "Windows (x64)",
+      "itch.io"
+    ],
+    "tags": [
+      "Shipped",
+      "Game Jam",
+      "3D Adventure",
+      "Unity"
+    ],
+    "primaryTag": "Unity",
+    "role": "Gameplay Programmer",
+    "year": 2026,
+    "featured": true,
+    "controls": [
+      {
+        "keys": "WASD",
+        "action": "Move"
+      },
+      {
+        "keys": "Left / Right click",
+        "action": "Fly up"
+      },
+      {
+        "keys": "E / F",
+        "action": "Interact"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "assets/projects/beelonging/shot1.jpg",
+        "alt": "Title screen over the meadow"
+      },
+      {
+        "src": "assets/projects/beelonging/shot3.jpg",
+        "alt": "Flying over water towards the hive"
+      },
+      {
+        "src": "assets/projects/beelonging/shot2.jpg",
+        "alt": "Dodging a frog on the path"
+      },
+      {
+        "src": "assets/projects/beelonging/shot4.jpg",
+        "alt": "A spider blocking the route"
+      },
+      {
+        "src": "assets/projects/beelonging/shot5.jpg",
+        "alt": "A skunk in the forest clearing"
+      }
+    ],
+    "mechanicsEyebrow": "Shipped jam build",
+    "mechanicsTitle": "What's in the game",
+    "mechanics": [
+      {
+        "title": "Free Flight",
+        "description": "WASD steers and either mouse button lifts the bee. Water anywhere below is instant death, so altitude is something the player manages the whole way home.",
+        "icon": "flight"
+      },
+      {
+        "title": "Pollen Collection",
+        "description": "A honey-bucket counter on the HUD tracks pollen gathered across the island, the main goal on the trip back to the hive.",
+        "icon": "local_florist"
+      },
+      {
+        "title": "Hazards & Health",
+        "description": "Frogs, skunks and spiders sit along the route, and the bee's HP bar drains as she takes hits — reach zero and the run ends.",
+        "icon": "favorite"
+      },
+      {
+        "title": "Interaction",
+        "description": "E or F interacts with the world, and the opening text hints that the eggs scattered around the island may be needed before the bee can get home.",
+        "icon": "touch_app"
+      }
+    ]
+  },
+  {
     "id": "tictactale",
     "title": "TicTacTale",
     "subtitle": "Turn-Based Duel · In development",
@@ -167,79 +380,6 @@
     ]
   },
   {
-    "id": "fps-inventory-system",
-    "title": "FPS Inventory System",
-    "subtitle": "Gameplay Prototype",
-    "thumbnail": "assets/projects/fps-inventory-system/thumbnail.jpg",
-    "heroImage": "assets/projects/fps-inventory-system/thumbnail.jpg",
-    "demoVideo": "assets/projects/fps-inventory-system/demo.mp4",
-    "prototypeLink": "",
-    "codeLink": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-",
-    "webglLink": "",
-    "itchLink": "",
-    "description": "A Unity prototype for a first-person shooter inventory and interaction system, including weapon pickup, switching, and UI-based management. Designed with a test-ready gameplay loop and refined through iterative debugging to ensure smooth and responsive player interactions.",
-    "category": "Gameplay Prototype",
-    "technologies": [
-      "Unity",
-      "C#",
-      "UI Toolkit",
-      "Input System"
-    ],
-    "tags": [
-      "C#",
-      "FPS",
-      "Unity"
-    ],
-    "primaryTag": "Unity",
-    "role": "Sole Developer",
-    "year": 2024,
-    "featured": true,
-    "mechanics": [
-      {
-        "title": "Weapon Pickup & Switching",
-        "description": "Seamless weapon pickup, inventory management, and switching logic with a clean UI-driven experience built for test-ready prototyping.",
-        "icon": "open_with"
-      },
-      {
-        "title": "UI-Based Management",
-        "description": "A responsive inventory HUD system that visually communicates weapon states, ammo counts, and interaction prompts clearly to the player.",
-        "icon": "dashboard"
-      },
-      {
-        "title": "Player Interaction System",
-        "description": "Raycasting-based interaction system allowing the player to pick up, drop, and cycle weapons with tight, responsive feel tuning.",
-        "icon": "gamepad"
-      },
-      {
-        "title": "Iterative Polish",
-        "description": "Refined through multiple playtest cycles to ensure smooth, bug-free gameplay loops and responsive player feedback at all times.",
-        "icon": "loop"
-      }
-    ],
-    "codeHighlights": [
-      {
-        "label": "Inventory.cs",
-        "note": "The inventory model itself — holding, swapping and dropping weapons across slots.",
-        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Inventory.cs"
-      },
-      {
-        "label": "Player.cs",
-        "note": "Raycast pickup and the interaction entry point that drives everything else.",
-        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Player.cs"
-      },
-      {
-        "label": "Gun.cs",
-        "note": "Weapon definition and per-weapon state, kept separate from the UI that shows it.",
-        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Gun.cs"
-      },
-      {
-        "label": "PrimaryGunPanel.cs",
-        "note": "Slot panel logic — the largest UI class, handling drag, assign and clear.",
-        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/PrimaryGunPanel.cs"
-      }
-    ]
-  },
-  {
     "id": "cursed-chaos",
     "title": "The Cursed Chaos",
     "subtitle": "Horror Game",
@@ -316,6 +456,79 @@
     ]
   },
   {
+    "id": "fps-inventory-system",
+    "title": "FPS Inventory System",
+    "subtitle": "Gameplay Prototype",
+    "thumbnail": "assets/projects/fps-inventory-system/thumbnail.jpg",
+    "heroImage": "assets/projects/fps-inventory-system/thumbnail.jpg",
+    "demoVideo": "assets/projects/fps-inventory-system/demo.mp4",
+    "prototypeLink": "",
+    "codeLink": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-",
+    "webglLink": "",
+    "itchLink": "",
+    "description": "A Unity prototype for a first-person shooter inventory and interaction system, including weapon pickup, switching, and UI-based management. Designed with a test-ready gameplay loop and refined through iterative debugging to ensure smooth and responsive player interactions.",
+    "category": "Gameplay Prototype",
+    "technologies": [
+      "Unity",
+      "C#",
+      "UI Toolkit",
+      "Input System"
+    ],
+    "tags": [
+      "C#",
+      "FPS",
+      "Unity"
+    ],
+    "primaryTag": "Unity",
+    "role": "Sole Developer",
+    "year": 2024,
+    "featured": true,
+    "mechanics": [
+      {
+        "title": "Weapon Pickup & Switching",
+        "description": "Seamless weapon pickup, inventory management, and switching logic with a clean UI-driven experience built for test-ready prototyping.",
+        "icon": "open_with"
+      },
+      {
+        "title": "UI-Based Management",
+        "description": "A responsive inventory HUD system that visually communicates weapon states, ammo counts, and interaction prompts clearly to the player.",
+        "icon": "dashboard"
+      },
+      {
+        "title": "Player Interaction System",
+        "description": "Raycasting-based interaction system allowing the player to pick up, drop, and cycle weapons with tight, responsive feel tuning.",
+        "icon": "gamepad"
+      },
+      {
+        "title": "Iterative Polish",
+        "description": "Refined through multiple playtest cycles to ensure smooth, bug-free gameplay loops and responsive player feedback at all times.",
+        "icon": "loop"
+      }
+    ],
+    "codeHighlights": [
+      {
+        "label": "Inventory.cs",
+        "note": "The inventory model itself — holding, swapping and dropping weapons across slots.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Inventory.cs"
+      },
+      {
+        "label": "Player.cs",
+        "note": "Raycast pickup and the interaction entry point that drives everything else.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Player.cs"
+      },
+      {
+        "label": "Gun.cs",
+        "note": "Weapon definition and per-weapon state, kept separate from the UI that shows it.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/Gun.cs"
+      },
+      {
+        "label": "PrimaryGunPanel.cs",
+        "note": "Slot panel logic — the largest UI class, handling drag, assign and clear.",
+        "url": "https://github.com/Nandy1002/Gun-Inventory-System-prototype-/blob/main/Assets/Scripts/Assignment%202/PrimaryGunPanel.cs"
+      }
+    ]
+  },
+  {
     "id": "kitchen-chaos",
     "title": "Kitchen Chaos",
     "subtitle": "3D Cooking Game",
@@ -344,7 +557,7 @@
     "primaryTag": "Unity",
     "role": "Solo — learning project",
     "year": 2024,
-    "featured": true,
+    "featured": false,
     "mechanics": [
       {
         "title": "Polymorphic Counter Hierarchy",

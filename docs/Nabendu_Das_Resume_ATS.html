@@ -125,7 +125,8 @@
         @media print {
             body {
                 padding: 0;
-                margin: 0.5in;
+                /* @page already supplies the 0.5in margin; a body margin on top doubled it. */
+                margin: 0;
                 max-width: 100%;
                 -webkit-print-color-adjust: exact;
             }
@@ -136,6 +137,13 @@
             a {
                 text-decoration: none !important;
                 color: #000 !important;
+            }
+            /* Keep each entry whole and never strand a heading at the foot of a page. */
+            .item {
+                break-inside: avoid;
+            }
+            h2 {
+                break-after: avoid;
             }
         }
     </style>
@@ -153,14 +161,16 @@
             <span class="separator">|</span>
             <a href="https://github.com/Nandy1002">github.com/Nandy1002</a>
             <span class="separator">|</span>
-            <a href="https://linkedin.com/in/nabendu-das">linkedin.com/in/nabendu-das</a>
+            <a href="https://www.linkedin.com/in/nabendu-das-1790a8202/">linkedin.com/in/nabendu-das-1790a8202</a>
+            <span class="separator">|</span>
+            <a href="https://nandy1002.itch.io/">nandy1002.itch.io</a>
         </div>
     </header>
 
     <section>
         <h2>Professional Summary</h2>
         <p style="margin:0; font-size: 10.5pt;">
-            Gameplay Programmer with 3 years of professional experience building 30+ mobile game prototypes and live projects. Strong foundation in C#, C++, OOP, and component-based architecture. Adept at system design, creating reusable code, tuning game feel, and optimizing for low-end devices across Unity and Unreal Engine.
+            Game Developer and Gameplay Programmer working in Unity and Unreal Engine 5, with 1.5+ years of full-time experience building 30+ mobile game prototypes and live projects. Shipped two game-jam titles on itch.io with five-person teams, one as lead gameplay programmer. Strong foundation in C#, C++, OOP, and component-based architecture. Adept at system design, creating reusable code, tuning game feel, and optimizing for low-end devices.
         </p>
     </section>
 
@@ -196,6 +206,20 @@
 
         <div class="item">
             <div class="item-header">
+                <span class="item-title">Salesforce Support / Release Intern</span>
+                <span class="item-date">Feb 2024 – Jul 2024</span>
+            </div>
+            <div class="item-header">
+                <span class="item-subtitle">Volvo Car</span>
+                <span class="item-location">Bangalore, India</span>
+            </div>
+            <ul>
+                <li>Optimized release workflows resulting in a 10% efficiency gain and managed access control across cross-functional teams.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
                 <span class="item-title">AR/VR Developer Intern</span>
                 <span class="item-date">Aug 2023 – Dec 2023</span>
             </div>
@@ -208,18 +232,37 @@
                 <li>Iterated heavily on interactive spatial UI and player comfort settings, delivering stable builds on a strict research timeline.</li>
             </ul>
         </div>
+    </section>
+
+    <section>
+        <h2>Shipped Games (Game Jams)</h2>
 
         <div class="item">
             <div class="item-header">
-                <span class="item-title">Salesforce Support / Release Intern</span>
-                <span class="item-date">Feb 2024 – Jul 2024</span>
+                <span class="item-title">The Cursed Isle of Colchis — Lead Gameplay Programmer</span>
+                <span class="item-date">Sep 2026</span>
             </div>
             <div class="item-header">
-                <span class="item-subtitle">Volvo Car</span>
-                <span class="item-location">Bangalore, India</span>
+                <span class="item-subtitle">GBJAM 14 · Team of 5 · Unity, C#, WebGL</span>
+                <span class="item-location">nandy1002.itch.io/the-cursed-isle-of-colchis</span>
             </div>
             <ul>
-                <li>Optimized release workflows resulting in a 10% efficiency gain and managed access control across cross-functional teams.</li>
+                <li>Led gameplay programming and wrote most of the code for a Game Boy-style action RPG with real-time combat, multi-phase boss fights and an in-world shop.</li>
+                <li>Built within GBJAM's 160×144, four-colour constraints and shipped a browser-playable WebGL build on itch.io.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Beelonging — Gameplay Programmer</span>
+                <span class="item-date">Sep 2026</span>
+            </div>
+            <div class="item-header">
+                <span class="item-subtitle">GoedWare Game Jam #17 · Team of 5 · Unity, C#</span>
+                <span class="item-location">aha-games.itch.io/beelonging</span>
+            </div>
+            <ul>
+                <li>Gameplay programmer on a low-poly 3D flying adventure; shipped a Windows build on itch.io within the jam deadline.</li>
             </ul>
         </div>
     </section>
