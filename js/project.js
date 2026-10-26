@@ -131,6 +131,14 @@ function renderMedia(project) {
     const frame = document.getElementById('project-media');
     if (!section || !frame) return;
 
+    const trailer = document.getElementById('project-trailer');
+    if (trailer && project.youtubeVideo) {
+        trailer.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${esc(project.youtubeVideo)}"
+            title="${esc(project.title)} trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        trailer.hidden = false;
+        section.hidden = false;
+    }
+
     const poster = project.thumbnail || project.heroImage;
 
     // Browser builds load on click: a Unity WebGL download shouldn't start for every visitor.

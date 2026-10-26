@@ -1,5 +1,121 @@
 [
   {
+    "id": "gnome-infestation",
+    "title": "Gnome Infestation",
+    "subtitle": "3D Café Management Roguelike · Comfy Jam: Autumn",
+    "thumbnail": "assets/projects/gnome-infestation/shot1.webp",
+    "heroImage": "assets/projects/gnome-infestation/shot1.webp",
+    "demoVideo": "",
+    "youtubeVideo": "QEUHkoyQlUQ",
+    "prototypeLink": "",
+    "codeLink": "",
+    "webglLink": "",
+    "itchLink": "https://nandy1002.itch.io/gnome-infestation",
+    "embedUrl": "https://html-classic.itch.zone/html/19832841/WebBuild/index.html",
+    "embedSize": {
+      "width": 1920,
+      "height": 1140
+    },
+    "shipped": true,
+    "platform": "Browser (HTML5) · Windows",
+    "team": "5 developers",
+    "jam": {
+      "name": "Comfy Jam: Autumn 2026",
+      "url": "https://itch.io/jam/comfy-jam-autumn-2026",
+      "entryUrl": "https://itch.io/jam/comfy-jam-autumn-2026/rate/5175027"
+    },
+    "description": "A 3D café-management roguelike made by a five-person team for Comfy Jam: Autumn 2026. On your first shift, brew coffee and serve customers while mischievous gnomes sneak around the café stealing the mugs and tools you need. The gnomes freeze when you look directly at them, turning a cozy barista routine into a tense game of keeping the café in order. I worked as a programmer on the Unity team.",
+    "category": "Simulation · Game Jam",
+    "technologies": [
+      "Unity",
+      "C#",
+      "3D",
+      "HTML5",
+      "itch.io"
+    ],
+    "tags": [
+      "Shipped",
+      "Game Jam",
+      "Simulation",
+      "Unity"
+    ],
+    "primaryTag": "Unity",
+    "role": "Programmer",
+    "year": 2026,
+    "featured": true,
+    "controls": [
+      {
+        "keys": "WASD",
+        "action": "Move"
+      },
+      {
+        "keys": "Ctrl",
+        "action": "Crouch"
+      },
+      {
+        "keys": "F",
+        "action": "Interact"
+      },
+      {
+        "keys": "E",
+        "action": "Pick up / drop"
+      },
+      {
+        "keys": "Esc",
+        "action": "Pause"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "assets/projects/gnome-infestation/thumbnail.webp",
+        "alt": "Gnome Infestation illustrated game cover"
+      },
+      {
+        "src": "assets/projects/gnome-infestation/shot1.webp",
+        "alt": "A gnome sneaking through the café"
+      },
+      {
+        "src": "assets/projects/gnome-infestation/shot2.webp",
+        "alt": "Café gameplay screenshot"
+      },
+      {
+        "src": "assets/projects/gnome-infestation/shot3.webp",
+        "alt": "Café gameplay screenshot"
+      },
+      {
+        "src": "assets/projects/gnome-infestation/shot4.webp",
+        "alt": "Café gameplay screenshot"
+      },
+      {
+        "src": "assets/projects/gnome-infestation/shot5.webp",
+        "alt": "Café gameplay screenshot"
+      },
+      {
+        "src": "assets/projects/gnome-infestation/shot6.webp",
+        "alt": "Café gameplay screenshot"
+      }
+    ],
+    "mechanicsEyebrow": "Made for Comfy Jam: Autumn",
+    "mechanicsTitle": "A café shift with a gnome problem",
+    "mechanics": [
+      {
+        "title": "Brew & Serve",
+        "description": "Prepare black coffee by grinding beans and brewing them in the machine; add milk to turn it into a latte for customers.",
+        "icon": "coffee"
+      },
+      {
+        "title": "Watch the Gnomes",
+        "description": "Gnomes sneak around the café and steal mugs and other useful items. Look directly at them to make them freeze before they can cause more trouble.",
+        "icon": "visibility"
+      },
+      {
+        "title": "Hands-On Café Work",
+        "description": "Move around the café, interact with stations, and pick up or drop objects as you keep orders moving through the coffee-making steps.",
+        "icon": "storefront"
+      }
+    ]
+  },
+  {
     "id": "cursed-isle-of-colchis",
     "title": "The Cursed Isle of Colchis",
     "subtitle": "Game Boy-Style Action RPG · GBJAM 14",

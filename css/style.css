@@ -881,10 +881,21 @@ p {
 }
 
 .media-frame video,
-.media-frame img {
+.media-frame img,
+.media-frame--trailer iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: contain;
+}
+
+.media-frame--trailer {
+  max-width: 960px;
+  margin: 24px auto 0;
+}
+
+.media-frame--trailer iframe {
+  display: block;
+  border: 0;
 }
 
 .media-frame img {
