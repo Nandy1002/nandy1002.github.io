@@ -11,6 +11,12 @@ Gameplay-focused developer working across Unity and Unreal Engine 5. I build fas
 
 ## 🚀 Featured Projects
 
+### [Gnome Infestation](https://nandy1002.github.io/project.html?id=gnome-infestation) — Unity · Shipped · Comfy Jam: Autumn 2026
+A 3D café-management roguelike made by a team of five. Brew coffee and serve customers while gnomes sneak through the café stealing mugs and tools; they freeze when you look directly at them. **Playable in the browser.**
+- **Role**: Programmer (team of 5).
+- **Tech**: Unity, C#, HTML5.
+- **Play**: [nandy1002.itch.io/gnome-infestation](https://nandy1002.itch.io/gnome-infestation) · [YouTube trailer](https://www.youtube.com/watch?v=QEUHkoyQlUQ)
+
 ### [The Cursed Isle of Colchis](https://nandy1002.github.io/project.html?id=cursed-isle-of-colchis) — Unity · Shipped · GBJAM 14
 A Game Boy-style action RPG set on the island of the Golden Fleece, made by a team of five for GBJAM 14 and released on itch.io. **Playable in the browser.**
 - **Role**: Lead Gameplay Programmer (team of 5).
@@ -88,15 +94,15 @@ js/main.js             project grid + skills  (home & projects pages)
 js/project.js          project detail page
 data/projects.json     one entry per project
 data/skills.json       skill groups rendered on the home page
-assets/projects/<id>/  thumbnail.jpg + optional demo.mp4 / screenshots
+assets/projects/<id>/  thumbnail image + optional demo video / screenshots
 ```
 
 ### Adding a project
 
 1. Add an entry to `data/projects.json`.
-2. Drop a `thumbnail.jpg` (16:9) and an optional `demo.mp4` into `assets/projects/<id>/`, then set `thumbnail` / `demoVideo` to those paths.
+2. Drop a 16:9 thumbnail image (JPG, PNG or WebP) and optional demo media into `assets/projects/<id>/`, then set `thumbnail` / `demoVideo` to those paths.
 3. Set `"featured": true` to surface it on the home page.
-4. For a released game, add any of: `shipped`, `platform`, `team`, `jam` (`name` / `url` / `entryUrl`), `itchLink`, `controls`, `gallery` and `pixelArt`. Set `embedUrl` (an `https://itch.io/embed-upload/<id>` link) plus `embedSize` to make a browser build playable on its project page — it loads only when the visitor clicks Play.
+4. For a released game, add any of: `shipped`, `platform`, `team`, `jam` (`name` / `url` / `entryUrl`), `itchLink`, `controls`, `gallery` and `pixelArt`. Set `embedUrl` to the itch.io embed-upload URL and `embedSize` to make a browser build playable on its project page — it loads only when the visitor clicks Play. Add `youtubeVideo` with the YouTube video ID to show a trailer on the project page.
 
 If a thumbnail is missing the card falls back to a placeholder rather than a broken image, and the detail page hides the media block entirely.
 
